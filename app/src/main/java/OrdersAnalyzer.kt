@@ -42,13 +42,13 @@ class OrdersAnalyzer {
 
 fun main() {
     val ordersAnalyzer = OrdersAnalyzer()
-    val orders = ordersGenerator()
+    val orders = generateOrders()
 
     val result = ordersAnalyzer.totalDailySales(orders)
     println(result)
 }
 
-fun ordersGenerator(): List<OrdersAnalyzer.Order> {
+fun generateOrders(): List<OrdersAnalyzer.Order> {
 
     val orderLines1 = listOf(
         OrdersAnalyzer.OrderLine(9872, "Pencil", 3, BigDecimal(3.00))
