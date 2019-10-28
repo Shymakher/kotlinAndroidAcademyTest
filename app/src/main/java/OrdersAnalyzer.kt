@@ -44,8 +44,8 @@ fun main() {
     val ordersAnalyzer = OrdersAnalyzer()
     val orders = ordersGenerator()
 
-    ordersAnalyzer.totalDailySales(orders)
-    println(ordersAnalyzer.totalDailySales(orders))
+    val result = ordersAnalyzer.totalDailySales(orders)
+    println(result)
 }
 
 fun ordersGenerator(): List<OrdersAnalyzer.Order> {
